@@ -1,0 +1,51 @@
+{
+  "kind": "collectionType",
+  "collectionName": "menu_items",
+  "info": {
+    "singularName": "menu-item",
+    "pluralName": "menu-items",
+    "displayName": "Menu item"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "section": {
+      "type": "enumeration",
+      "required": true,
+      "enum": [
+        "Tostadas",
+        "Tapas",
+        "Ensaladas",
+        "Platos Combinados",
+        "Brasa",
+        "Parrillada",
+        "Embutidos",
+        "Postre",
+        "Bebidas",
+        "Cervezas",
+        "Vinos"
+      ]
+    },
+    "name_es": {
+      "type": "string",
+      "required": true
+    },
+    "name_en": {
+      "type": "string",
+      "required": true
+    },
+    "price": {
+      "type": "decimal",
+      "required": true
+    },
+    "allergens": {
+      "type": "json"
+    },
+    "order": {
+      "type": "integer",
+      "required": true
+    }
+  }
+}
