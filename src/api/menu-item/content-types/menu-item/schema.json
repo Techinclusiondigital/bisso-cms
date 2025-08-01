@@ -17,12 +17,14 @@
       "enum": [
         "Tostadas",
         "Tapas",
+        "Entrantes",
         "Ensaladas",
-        "Platos Combinados",
+        "Platos",
         "Brasa",
-        "Parrillada",
+        "Ricas Carnes",
+        "Parrilladas",
         "Embutidos",
-        "Postre",
+        "Postres",
         "Bebidas",
         "Cervezas",
         "Vinos"
