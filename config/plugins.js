@@ -1,8 +1,8 @@
-// path: bisso-cms/config/plugins.js
+// path: ./config/plugins.js
 module.exports = ({ env }) => ({
+  // Plugin Users & Permissions
   'users-permissions': {
-    config: {
-      jwtSecret: env('JWT_SECRET'),
-    },
+    // lee la variable de entorno JWT_SECRET
+    jwtSecret: env('JWT_SECRET'),
   },
 });
