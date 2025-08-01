@@ -1,11 +1,11 @@
 // config/database.ts
 export default ({ env }) => ({
   connection: {
-    client: env('DATABASE_CLIENT', 'sqlite'),
+    client: 'postgres',
     connection: {
-      filename: env('DATABASE_FILENAME', '.tmp/data.db'),
+      connectionString: env('DATABASE_URL'),
+      ssl: env.bool('DATABASE_SSL', true),
     },
-    useNullAsDefault: true,
   },
 });
 
