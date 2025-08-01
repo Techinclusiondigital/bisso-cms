@@ -1,8 +1,12 @@
-// path: ./config/admin.js
-module.exports = ({ env }) => ({
+// path: ./config/admin.ts
+export default ({ env }) => ({
+  // Para los API Tokens (Plugin users-permissions)
   apiToken: {
-    // Si existe la var API_TOKEN_SALT la usa; si no, cae a este array de respaldo
     salt: env('API_TOKEN_SALT', 'localDevSaltChangeMe123!'),
+  },
+  // Para la autenticación del panel Admin (JWT interno)
+  auth: {
+    secret: env('ADMIN_JWT_SECRET', 'localDevAuthSecretChangeMe456!'),
   },
 });
 
